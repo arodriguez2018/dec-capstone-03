@@ -34,9 +34,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   capstone:
     # Config indicated by + and applies to all files under models/example/
-    airbyte_schema:
-      marts:
-        core:
-          +materialized: table
-      staging:
+    marts:
+      core:
+        +materialized: table
+    staging:
+      airbyte_schema:
         +materialized: view
