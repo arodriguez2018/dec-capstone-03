@@ -38,5 +38,4 @@ models:
       core:
         +materialized: table
     staging:
-      airbyte_schema:
-        +materialized: view
+      +materialized: view
