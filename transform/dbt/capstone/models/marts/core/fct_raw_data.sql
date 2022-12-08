@@ -1,3 +1,3 @@
 select 
     *
-from {{ ref('stg_raw_data')}}
+from {{ ref('stg_raw_well')}}
